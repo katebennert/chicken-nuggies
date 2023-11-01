@@ -4,7 +4,7 @@ import Scroll from "./Scroll";
 
 function App() {
   return (
-    <div className="font-inter">
+    <div className="font-inter bg-bgBeige min-h-screen">
       <Home />
       <Nav />
       <Scroll />
