@@ -1,10 +1,13 @@
 import Home from "./Home";
+import Scroll from "./Scroll";
 
 function App() {
   return (
-   <>
-    <Home />
-  </>
+    <div className="font-inter">
+      <Home />
+      <Scroll />
+
+    </div>
   );
 }
 

@@ -18,6 +18,7 @@ module.exports = {
       },
       fontFamily: {
         limelight: ["Limelight", 'cursive'],
+        inter: ["Inter", 'sans-serif']
       }
     },
   },
