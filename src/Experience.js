@@ -1,6 +1,6 @@
 function Experience() {
     return (
-        <div className="">
+        <div className="border">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod purus nec turpis ultrices, nec rhoncus ipsum volutpat. Vestibulum at ullamcorper ex. Curabitur auctor ullamcorper mauris, a pellentesque risus egestas at. Nulla facilisi. Suspendisse in est et justo consequat sagittis a a massa. Vestibulum non cursus lacus, vel sollicitudin nunc. Sed non justo in velit hendrerit tincidunt vitae vitae risus. Nam venenatis mi eu libero vestibulum venenatis. Integer elementum sagittis vestibulum. Proin sit amet erat eu libero ullamcorper gravida vel sed ex.
             </p>
             <p>
