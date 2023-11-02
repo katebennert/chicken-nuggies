@@ -1,6 +1,6 @@
 import Home from "./Home";
 import Nav from "./Nav";
-import Scroll from "./Scroll";
+import Experience from "./Experience";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
@@ -15,13 +15,12 @@ function App() {
         <div className="border border-yellow-500"> {/* NAV */}
           <Nav />
         </div>
-        <div className="border border-pink-500">
-        <FontAwesomeIcon icon={faHeart} />
-
+        <div className="border border-pink-500"> {/* ICONS */}
+          <FontAwesomeIcon icon={faHeart} />
         </div>
       </div>
-      <div className="border border-red-500 flex-grow p-4 order-2 m-4 lg:m-10"> {/* RIGHT SIDE */}
-        <Scroll />
+      <div className="border border-red-500 flex-grow p-4 order-2 m-4 lg:m-10"> {/* RIGHT SIDE SCROLL*/}
+        <Experience />
       </div>
     </div>
   );
