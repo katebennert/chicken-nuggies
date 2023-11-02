@@ -2,8 +2,7 @@ import Home from "./Home";
 import Nav from "./Nav";
 import Experience from "./Experience";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart } from '@fortawesome/free-solid-svg-icons';
-
+import { faDev, faGithub, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 function App() {
   return (
@@ -16,7 +15,10 @@ function App() {
           <Nav />
         </div>
         <div className="border border-pink-500"> {/* ICONS */}
-          <FontAwesomeIcon icon={faHeart} />
+          <FontAwesomeIcon icon={faGithub} />
+          <FontAwesomeIcon icon={faXTwitter} />
+          <FontAwesomeIcon icon={faLinkedin} />
+          <FontAwesomeIcon icon={faDev} />
         </div>
       </div>
       <div className="border border-red-500 flex-grow p-4 order-2 m-4 lg:m-10"> {/* RIGHT SIDE SCROLL*/}
