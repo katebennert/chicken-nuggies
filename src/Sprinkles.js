@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const Sprinkles = () => {
+function Sprinkles() {
 
   return (
-    <div>
-      Sprinkle
-    </div>
+    <span className="sprinkle-jar border border-yellow-600">
+      Sprinkle eeeeeee
+    </span>
   );
 };
 
