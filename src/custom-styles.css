@@ -1,3 +1,26 @@
 * {
     background: #efefff;
 }
+
+@keyframes sprinkleAnimation {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh);
+      opacity: 0;
+    }
+  }
+
+  .sprinkle-jar {
+    position: relative;
+    /* Other styles */
+  }
+  
+  .animate-sprinkles {
+    animation: sprinkleAnimation 5s linear forwards;
+    position: absolute;
+    /* Other styles for sprinkles */
+  }
+  
