@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
 import Sprinkles from "./Sprinkles";
 
-function Home() {
+function Header() {
 
     const [animationActive, setAnimationActive] = useState(false);
 
     const startAnimation = () => {
       setAnimationActive(true);
       console.log("started")
-    //   const sprinkleJar = document.querySelector('.sprinkle-jar');
-    //   sprinkleJar.classList.add('animate-sprinkles');
   
       setTimeout(() => {
         setAnimationActive(false);
@@ -31,5 +29,5 @@ function Home() {
     );
   }
   
-  export default Home;
+  export default Header;
   

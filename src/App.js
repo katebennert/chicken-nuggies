@@ -1,5 +1,5 @@
 import './custom-styles.css';
-import Home from "./Home";
+import Header from "./Header";
 import Nav from "./Nav";
 import Experience from "./Experience";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -11,7 +11,7 @@ function App() {
       <div className="flex-shrink-0 w-full lg:w-1/2 order-1 pl-6 pr-6 md:pl-10 md:pr-10"> {/* LEFT SIDE */}
         <div className="sticky top-0 lg:h-screen flex flex-col justify-center"> {/* STICKY */}
           <div className="mb-6 mt-10 "> {/* HOME */}
-            <Home />
+            <Header />
           </div>
           <div className="hidden lg:block mb-6 lg:mt-20"> {/* NAV */}
             <Nav />
