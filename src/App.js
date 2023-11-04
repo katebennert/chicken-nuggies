@@ -23,7 +23,6 @@ function App() {
 
   return (
     <>
-          <div className="border border-yellow-600"><Sprinkles /></div>
           <div className={`${animationActive ? "animate-sprinkles" : ""}`}> {animationActive && <Sprinkles />} </div>
    
     <div className="font-inter flex flex-col lg:flex-row "> {/* APP */}      

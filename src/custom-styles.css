@@ -21,6 +21,7 @@
   .animate-sprinkles {
     animation: sprinkleAnimation 5s linear forwards;
     position: absolute;
+    z-index: 1;
     /* Other styles for sprinkles */
   }
   
