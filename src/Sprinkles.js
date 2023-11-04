@@ -2,7 +2,7 @@ import React from 'react';
 
 const Sprinkles = () => {
   const sprinkleColors = ['pink', 'yellow', 'green', 'orange', 'white', 'purple'];
-  const numRows = 30; // Define the number of rows
+  const numRows = 50; // Define the number of rows
   const numSprinklesPerRow = 15; // Define the number of sprinkles per row
 
   const getRandomColor = () => {
