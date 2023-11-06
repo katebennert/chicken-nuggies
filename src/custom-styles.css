@@ -48,31 +48,25 @@
 }
 
 .sprinkle-pink {
-    @apply sprinkle;
     background-color: #ff00ea;
 }
 
 .sprinkle-yellow {
-    @apply sprinkle;
     background-color: #d4ff00;
 }
 
 .sprinkle-green {
-    @apply sprinkle;
     background-color: #0dff00;
 }
 
 .sprinkle-orange {
-    @apply sprinkle;
     background-color: #ff9900;
 }
 
 .sprinkle-white {
-    @apply sprinkle;
     background-color: #fdfbfd;
 }
 
 .sprinkle-purple {
-    @apply sprinkle;
     background-color: #ae00ff;
 }

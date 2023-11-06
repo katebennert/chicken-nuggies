@@ -20,7 +20,7 @@ const Sprinkles = () => {
     return Array.from({ length: numSprinklesPerRow }, (_, index) => (
       <div
         key={index}
-        className={`sprinkle-${getRandomColor()} rot-${getRandomRotation()} mb-10`}
+        className={`sprinkle sprinkle-${getRandomColor()} rot-${getRandomRotation()} mb-10`}
       ></div>
     ));
   };
