@@ -13,11 +13,11 @@ function App() {
 
   const startAnimation = () => {
     setAnimationActive(true);
-    console.log("started")
+    //console.log("started")
 
     setTimeout(() => {
       setAnimationActive(false);
-      console.log("stopped")
+      //console.log("stopped")
     }, 5000); 
   };
 
@@ -35,10 +35,10 @@ function App() {
             <Nav />
           </div>
           <div className="flex flex-row space-x-6 lg:space-x-10 mb-6 justify-center lg:mt-10 lg:mb-20">
-            <FontAwesomeIcon icon={faGithub} style={{ fontSize: '1.5rem' }} />
-            <FontAwesomeIcon icon={faXTwitter} style={{ fontSize: '1.5rem' }} />
-            <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: '1.5rem' }} />
-            <FontAwesomeIcon icon={faDev} style={{ fontSize: '1.5rem' }} />
+            <FontAwesomeIcon icon={faGithub} style={{ fontSize: '1.5rem' }} className="hover:text-spPink" />
+            <FontAwesomeIcon icon={faXTwitter} style={{ fontSize: '1.5rem' }} className="hover:text-spYellow" />
+            <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: '1.5rem' }} className="hover:text-spPurple" />
+            <FontAwesomeIcon icon={faDev} style={{ fontSize: '1.5rem' }} className="hover:text-spOrange" />
           </div>
         </div>
       </div>
