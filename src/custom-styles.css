@@ -1,5 +1,5 @@
 * {
-    background: #fac7f6;
+    background: #fac7dd;
 }
 
 @keyframes sprinkleFall {
@@ -25,59 +25,54 @@
     z-index: 1;
 }
 
-.sprinkle-pink {
-    width: 30px; /* Adjust the width to your preference */
-    height: 10px; /* Adjust the height to create an oval shape */
-    background-color: #ff00ea; /* Color of the sprinkle */
+.rot-45 {
+    transform: rotate(45deg);
+}
+  
+.rot-neg-35 {
+    transform: rotate(-35deg);
+}
+
+.rot-10 {
+    transform: rotate(10deg);
+}
+  
+.rot-80 {
+    transform: rotate(80deg);
+}
+
+.sprinkle {
+    width: 30px;
+    height: 10px;
     border-radius: 35%;
-    margin: 5px; /* Add spacing between the sprinkles */
-    transform: rotate(-45deg);
+}
+
+.sprinkle-pink {
+    @apply sprinkle;
+    background-color: #ff00ea;
 }
 
 .sprinkle-yellow {
-    width: 30px; /* Adjust the width to your preference */
-    height: 10px; /* Adjust the height to create an oval shape */
-    background-color: #d4ff00; /* Color of the sprinkle */
-    border-radius: 35%;
-    margin: 5px; /* Add spacing between the sprinkles */
-    transform: rotate(45deg);
+    @apply sprinkle;
+    background-color: #d4ff00;
 }
 
 .sprinkle-green {
-    width: 30px; /* Adjust the width to your preference */
-    height: 10px; /* Adjust the height to create an oval shape */
-    background-color: #0dff00; /* Color of the sprinkle */
-    border-radius: 35%;
-    margin: 5px; /* Add spacing between the sprinkles */
-    transform: rotate(-45deg);
+    @apply sprinkle;
+    background-color: #0dff00;
 }
 
 .sprinkle-orange {
-    width: 30px; /* Adjust the width to your preference */
-    height: 10px; /* Adjust the height to create an oval shape */
-    background-color: #ff9900; /* Color of the sprinkle */
-    border-radius: 35%;
-    margin: 5px; /* Add spacing between the sprinkles */
-    transform: rotate(45deg);
+    @apply sprinkle;
+    background-color: #ff9900;
 }
 
 .sprinkle-white {
-    width: 30px; /* Adjust the width to your preference */
-    height: 10px; /* Adjust the height to create an oval shape */
-    background-color: #fdfbfd; /* Color of the sprinkle */
-    border-radius: 35%;
-    margin: 5px; /* Add spacing between the sprinkles */
-    transform: rotate(-45deg);
+    @apply sprinkle;
+    background-color: #fdfbfd;
 }
 
 .sprinkle-purple {
-    width: 30px; /* Adjust the width to your preference */
-    height: 10px; /* Adjust the height to create an oval shape */
-    background-color: #ae00ff; /* Color of the sprinkle */
-    border-radius: 35%;
-    margin: 5px; /* Add spacing between the sprinkles */
-    transform: rotate(45deg);
+    @apply sprinkle;
+    background-color: #ae00ff;
 }
-  
-  
-  

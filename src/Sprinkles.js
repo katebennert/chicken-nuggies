@@ -2,26 +2,32 @@ import React from 'react';
 
 const Sprinkles = () => {
   const sprinkleColors = ['pink', 'yellow', 'green', 'orange', 'white', 'purple'];
-  const numRows = 50; // Define the number of rows
-  const numSprinklesPerRow = 15; // Define the number of sprinkles per row
+  const sprinkleRotations = ['45', 'neg-35', '10', '80'];
+  const numRows = 20; // Define the number of rows
+  const numSprinklesPerRow = 40; // Define the number of sprinkles per row
 
   const getRandomColor = () => {
     const randomIndex = Math.floor(Math.random() * sprinkleColors.length);
     return sprinkleColors[randomIndex];
   };
 
+  const getRandomRotation = () => {
+    const randomIndex = Math.floor(Math.random() * sprinkleRotations.length);
+    return sprinkleRotations[randomIndex];
+  };
+
   const generateRow = () => {
     return Array.from({ length: numSprinklesPerRow }, (_, index) => (
       <div
         key={index}
-        className={`sprinkle-${getRandomColor()}`}
+        className={`sprinkle-${getRandomColor()} rot-${getRandomRotation()} mb-10`}
       ></div>
     ));
   };
 
   const generateSprinkleRows = () => {
     return Array.from({ length: numRows * 2 }, (_, index) => (
-      <span key={index} className={`sprinkle-jar flex flex-row space-x-20 ${index % 2 !== 0 ? 'ml-10' : ''}`}>
+      <span key={index} className={`sprinkle-jar flex flex-row space-x-32 ${index % 2 !== 0 ? 'ml-16' : ''}`}>
         {generateRow()}
       </span>
     ));
