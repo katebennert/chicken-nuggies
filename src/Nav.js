@@ -1,10 +1,27 @@
+import React from 'react';
+import { scroller } from 'react-scroll';
+
 function Nav() {
+
+    const scrollToSection = (elementId) => {
+        scroller.scrollTo(elementId, {
+          duration: 800,
+          delay: 0
+        });
+    };
+
     return (
-        <div className="flex flex-col justify-between items-center">
-            <h3 className="mb-4" >About</h3>
-            <h3 className="mb-4">Experience</h3>
-            <h3>Projects</h3>
-        </div>
+        <nav>
+            <span onClick={() => scrollToSection('about')} >
+                About
+            </span>
+            <span onClick={() => scrollToSection('projects')}>
+                Projects
+            </span>
+            <span onClick={() => scrollToSection('experience')}>
+                Experience
+            </span>
+        </nav>
     );
   }
   

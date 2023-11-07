@@ -70,3 +70,7 @@
 .sprinkle-purple {
     background-color: #ae00ff;
 }
+
+html {
+    scroll-behavior: smooth;
+}
