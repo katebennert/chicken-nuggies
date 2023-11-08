@@ -3,7 +3,7 @@ import React from 'react';
 const Sprinkles = () => {
   const sprinkleColors = ['pink', 'yellow', 'green', 'orange', 'white', 'purple'];
   const sprinkleRotations = ['45', 'neg-35', '10', '80'];
-  const numRows = 20; // Define the number of rows
+  const numRows = 30; // Define the number of rows
   const numSprinklesPerRow = 40; // Define the number of sprinkles per row
 
   const getRandomColor = () => {

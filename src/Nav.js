@@ -11,17 +11,27 @@ function Nav() {
     };
 
     return (
-        <nav>
-            <span onClick={() => scrollToSection('about')} >
-                About
-            </span>
-            <span onClick={() => scrollToSection('projects')}>
-                Projects
-            </span>
-            <span onClick={() => scrollToSection('experience')}>
-                Experience
-            </span>
-        </nav>
+        <div className="flex justify-center items-center">
+            <nav className="flex flex-col space-y-4 w-32">
+        <span
+          onClick={() => scrollToSection('about')}
+        >
+          💋 ABOUT
+        </span>
+        <span
+          onClick={() => scrollToSection('projects')}
+          
+        >
+          🍩 PROJECTS
+        </span>
+        <span
+          onClick={() => scrollToSection('experience')}
+         
+        >
+          🔪 EXPERIENCE
+        </span>
+      </nav>
+    </div>
     );
   }
   

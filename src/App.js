@@ -3,7 +3,9 @@ import './custom-styles.css';
 import Header from "./Header";
 import Nav from "./Nav";
 import Sprinkles from "./Sprinkles";
-import Content from './Content';
+import Experience from "./Experience";
+import Projects from './Projects';
+import { Element } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDev, faGithub, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
@@ -45,7 +47,15 @@ function App() {
           </div>
         </div>
         <div className="flex-grow order-2 p-6 md:p-10 lg:w-1/2 lg:p-20 "> {/* RIGHT SIDE SCROLL*/}
-          <Content />
+        <Element id="about" >
+        <h1>About</h1>
+      </Element>
+      <Element id="projects">
+        <Projects />
+      </Element>
+      <Element id="experience">
+        <Experience /> 
+      </Element>
         </div>
       </div>
     </>
