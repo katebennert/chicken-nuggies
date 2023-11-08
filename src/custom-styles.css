@@ -1,5 +1,5 @@
 * {
-    background: #fac7dd;
+    background: #fe84b9;
 }
 
 @keyframes sprinkleFall {
@@ -60,7 +60,7 @@
 }
 
 .sprinkle-orange {
-    background-color: #ff9900;
+    background-color: #ff9100;
 }
 
 .sprinkle-white {
@@ -91,4 +91,7 @@ html {
     cursor: url('./french-fries-28.png'), default;
 }
 
-  
+.nav li:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+

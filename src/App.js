@@ -38,11 +38,11 @@ function App() {
             <div className="hidden lg:block mb-6 lg:mt-20"> {/* NAV */}
               <Nav />
             </div>
-            <div className="flex flex-row space-x-6 lg:space-x-10 mb-6 justify-center lg:mt-10 lg:mb-20">
+            <div className="flex flex-row space-x-6 lg:space-x-10 mb-6 justify-center lg:mt-10 lg:mb-20 cursor-pointer text-white">
               <FontAwesomeIcon icon={faGithub} style={{ fontSize: '1.5rem' }} className="hover:text-spPink" />
               <FontAwesomeIcon icon={faXTwitter} style={{ fontSize: '1.5rem' }} className="hover:text-spYellow" />
               <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: '1.5rem' }} className="hover:text-spPurple" />
-              <FontAwesomeIcon icon={faDev} style={{ fontSize: '1.5rem' }} className="hover:text-spOrange" />
+              <FontAwesomeIcon icon={faDev} style={{ fontSize: '1.5rem' }} className="hover:text-spGreen" />
             </div>
           </div>
         </div>

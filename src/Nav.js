@@ -12,15 +12,15 @@ function Nav() {
 
     return (
         <div className="flex justify-center items-center text-center">
-            <ul className="" >
+            <ul className="text-donutBrown font-agbalumo nav" >
                 <span onClick={() => scrollToSection("about")}>
-                    <li className="burger-cursor hover:mix-blend-difference text-spPink">ABOUT</li>
+                    <li className="donut-cursor hover:bg-spPink hover:text-bgPink rounded-full mb-2 p-1 text-xl transition duration-300 ease-in-out">ABOUT</li>
                 </span>
                 <span onClick={() => scrollToSection("projects")}>
-                    <li className="pizza-cursor hover:mix-blend-difference text-spOrange">PROJECTS</li>
+                    <li className="donut-cursor hover:bg-spGreen hover:text-bgPink rounded-full mb-2 p-1 text-xl transition duration-300 ease-in-out">PROJECTS</li>
                 </span>
                 <span onClick={() => scrollToSection("experience")}>
-                    <li className="fries-cursor hover:mix-blend-difference text-spPurple">EXPERIENCE</li>
+                    <li className="donut-cursor hover:bg-spPurple hover:text-bgPink rounded-full p-1 text-xl transition duration-300 ease-in-out">EXPERIENCE</li>
                 </span>
             </ul>
 

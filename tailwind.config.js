@@ -8,15 +8,18 @@ module.exports = {
       },
       colors: {
         bgBeige: '#faf3eb',
+        bgPink: '#fe84b9',
         spPink: '#ff00ea',
         spYellow:  '#d4ff00',
         spGreen: '#0dff00',
-        spOrange: '#ff9900',
-        spPurple: '#ae00ff'
+        spOrange: '#ff9100',
+        spPurple: '#ae00ff',
+        donutBrown: '#360201'
       },
       fontFamily: {
         limelight: ["Limelight", 'cursive'],
-        inter: ["Inter", 'sans-serif']
+        inter: ["Inter", 'sans-serif'],
+        agbalumo: ["Agbalumo", 'cursive']
       }
     },
   },
