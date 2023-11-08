@@ -24,14 +24,15 @@ function App() {
   };
 
   return (
-    <>
-      <div className={`${animationActive ? "animate-sprinkles" : ""}`}> 
-        {animationActive && <Sprinkles />}
-      </div>
-   
-      <div className="font-inter flex flex-col lg:flex-row "> {/* APP */}      
+    <div className="font-inter flex flex-col lg:flex-row "> {/* APP */}  
+          
         <div className="flex-shrink-0 w-full lg:w-1/2 order-1 pl-6 pr-6 md:pl-10 md:pr-10"> {/* LEFT SIDE */}
           <div className="sticky top-0 lg:h-screen flex flex-col justify-center"> {/* STICKY */}
+          
+          <div className={`${animationActive ? "animate-sprinkles" : ""}`}> {/* SPRINKLE ANIMATION DIV */}
+            {animationActive && <Sprinkles />}
+          </div>
+
             <div className="mb-6 mt-10 "> {/* HOME */}
               <Header startAnimation={startAnimation} />
             </div>
@@ -58,7 +59,6 @@ function App() {
           </div>
         </div>
       </div>
-    </>
   );
   
 }
