@@ -4,7 +4,10 @@ const Sprinkles = () => {
   const sprinkleColors = ['pink', 'yellow', 'green', 'orange', 'white', 'purple'];
   const sprinkleRotations = ['45', 'neg-35', '10', '80'];
   const numRows = 30; // Define the number of rows
-  const numSprinklesPerRow = 40; // Define the number of sprinkles per row
+  // Calculate the number of sprinkles per row dynamically
+  const sprinkleSize = 40; // Define the size of each sprinkle (in pixels)
+  const margin = 20; // Define the margin between sprinkles (in pixels)
+  const numSprinklesPerRow = Math.floor((window.innerWidth - margin) / (sprinkleSize + margin));
 
   const getRandomColor = () => {
     const randomIndex = Math.floor(Math.random() * sprinkleColors.length);
