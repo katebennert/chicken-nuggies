@@ -74,3 +74,21 @@
 html {
     scroll-behavior: smooth;
 }
+
+.donut-cursor {
+    cursor: url('./doughnut-28px.png'), default;
+}
+
+.burger-cursor {
+    cursor: url('./hamburger-28px.png'), default;
+}
+
+.pizza-cursor {
+    cursor: url('./pizza-emoji-28px.png'), default;
+}
+
+.fries-cursor {
+    cursor: url('./french-fries-28.png'), default;
+}
+
+  
