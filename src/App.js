@@ -40,14 +40,14 @@ function App() {
               <Nav />
             </div>
             <div className="flex flex-row space-x-6 lg:space-x-10 mb-6 justify-center lg:mt-10 lg:mb-20 cursor-pointer text-white">
-              <FontAwesomeIcon icon={faGithub} style={{ fontSize: '1.5rem' }} className="hover:text-spPink" />
-              <FontAwesomeIcon icon={faXTwitter} style={{ fontSize: '1.5rem' }} className="hover:text-spYellow" />
-              <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: '1.5rem' }} className="hover:text-spPurple" />
-              <FontAwesomeIcon icon={faDev} style={{ fontSize: '1.5rem' }} className="hover:text-spGreen" />
+              <FontAwesomeIcon icon={faGithub} style={{ fontSize: '1.5rem' }} className="hover:text-spPink transition duration-300 ease-in-out" />
+              <FontAwesomeIcon icon={faXTwitter} style={{ fontSize: '1.5rem' }} className="hover:text-spYellow transition duration-300 ease-in-out" />
+              <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: '1.5rem' }} className="hover:text-spPurple transition duration-300 ease-in-out" />
+              <FontAwesomeIcon icon={faDev} style={{ fontSize: '1.5rem' }} className="hover:text-spGreen transition duration-300 ease-in-out" />
             </div>
           </div>
         </div>
-        <div className="flex-grow order-2 p-6 md:p-10 lg:w-1/2 lg:p-20 "> {/* RIGHT SIDE SCROLL*/}
+        <div className="flex-grow order-2 lg:w-1/2 xl:mr-64"> {/* RIGHT SIDE SCROLL*/}
           <div id="about" >
             <About />
           </div>

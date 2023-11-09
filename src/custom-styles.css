@@ -1,5 +1,10 @@
+:root {
+    --dark-pink: #fe84b9;
+    --light-pink:  #feb7d5;
+}
+
 * {
-    background: #fe84b9;
+    background: var(--light-pink)
 }
 
 @keyframes sprinkleFall {
@@ -93,5 +98,14 @@ html {
 
 .nav li:hover {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.name {
+    text-shadow: 2px 2px 4px rgba(255,255,255,0.9)
+}
+
+.name:hover {
+    text-shadow: 2px 2px 4px rgba(247, 16, 147, 0.9);
+    transition: text-shadow 0.3s ease-in-out;
 }
 
