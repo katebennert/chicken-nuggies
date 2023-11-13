@@ -47,7 +47,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="flex-grow order-2 lg:w-1/2 xl:mr-64"> {/* RIGHT SIDE SCROLL*/}
+        <div className="flex-grow order-2 lg:w-1/2 xl:mr-52 ml-10 mr-10 "> {/* RIGHT SIDE SCROLL*/}
           <div id="about" >
             <About />
           </div>
