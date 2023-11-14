@@ -1,11 +1,11 @@
 import React from "react";
 import projects from "./ProjectArray";
+import ProjectCard from "./ProjectCard";
 
 function Projects() {
     return (
         <div className="pt-20">
-            {projects.map(p => p.title)
-            }
+            {projects.map(project => <ProjectCard project={project} key={project.index} />)}
         </div>
     );
   }

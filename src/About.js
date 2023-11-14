@@ -3,10 +3,15 @@ import React from "react";
 function About() {
     return (
         <div className="pt-20">
-            <p>
-                TK TK I taught myself to code with the help of Flatiron School, Codecademy, YouTube, and ChatGPT during the longest months of the COVID-19 lockdown. I love creating fun, accessible, and sometimes <span className="text-white" >whimsical</span> websites that capture the personality of a people and products. 
+            <p className="mb-4">
+                I love creating fun, accessible, and <span className="text-white flip-on-hover burger-cursor" >whimsical</span> websites that capture the personality of a people and products. 
             </p>
-            
+            <p className="mb-4">
+                Before I got into web design, 
+            </p>
+            <p className="mb-4">
+                In my freetime you can find me cooking for fun, playing with my dog Cannoli, doing the NYT Crossword, working on my deadlift, or planning a canoe trip in the Adirondacks.
+            </p>
         </div>
     );
   }

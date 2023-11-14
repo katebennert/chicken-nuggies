@@ -6,7 +6,7 @@
 }
 
 * {
-    background: var(--light-pink)
+    background: var(--light-pink);
 }
 
 @keyframes sprinkleFall {
@@ -111,3 +111,11 @@ html {
     transition: text-shadow 0.3s ease-in-out;
 }
 
+.flip-on-hover {
+    display: inline-block;
+    transition: transform 0.7s ease;
+}
+  
+.flip-on-hover:hover {
+    transform: rotateX(360deg);
+}

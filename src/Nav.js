@@ -14,13 +14,13 @@ function Nav() {
         <div className="flex justify-center items-center text-center">
             <ul className="text-donutBrown font-agbalumo nav" >
                 <span onClick={() => scrollToSection("about")}>
-                    <li className="donut-cursor hover:bg-spPink hover:text-white rounded-full mb-4 p-1 text-xl transition duration-300 ease-in-out">ABOUT</li>
+                    <li className="hover:bg-spPink hover:text-white rounded-full mb-4 p-1 text-xl transition duration-300 ease-in-out cursor-pointer">ABOUT</li>
                 </span>
                 <span onClick={() => scrollToSection("projects")}>
-                    <li className="donut-cursor hover:bg-spGreen hover:text-white rounded-full mb-4 p-1 text-xl transition duration-300 ease-in-out">PROJECTS</li>
+                    <li className="hover:bg-spGreen hover:text-white rounded-full mb-4 p-1 text-xl transition duration-300 ease-in-out cursor-pointer">PROJECTS</li>
                 </span>
                 <span onClick={() => scrollToSection("experience")}>
-                    <li className="donut-cursor hover:bg-spPurple hover:text-white rounded-full p-1 text-xl transition duration-300 ease-in-out">EXPERIENCE</li>
+                    <li className="hover:bg-spPurple hover:text-white rounded-full p-1 text-xl transition duration-300 ease-in-out cursor-pointer">EXPERIENCE</li>
                 </span>
             </ul>
 
