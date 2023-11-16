@@ -8,6 +8,7 @@ import Experience from "./Experience";
 import Projects from './Projects';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDev, faGithub, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import ComputerDonut from './computer-donut.png'
 
 function App() {
 
@@ -29,18 +30,27 @@ function App() {
   };
 
   return (
-    <div className="font-inter flex flex-col lg:flex-row"> {/* APP */}  
+    <div className="font-inter flex flex-col lg:flex-row relative"> {/* APP */}  
+
+        <img
+            src={ComputerDonut}
+            alt="Kate with two donuts"
+            className="absolute bottom-0 left-0 hidden lg:block"
+            style={{ width: '16vw', zIndex: '9999', background: 'none' }}
+          />
           
         <div className="flex-shrink-0 w-full lg:w-1/2 order-1 pl-6 pr-6 md:pl-10 md:pr-10"> {/* LEFT SIDE */}
           <div className="sticky top-0 lg:h-screen flex flex-col justify-center"> {/* STICKY */}
+
+          
           
           <div className={`${animationActive ? "animate-sprinkles" : ""}`}> {/* SPRINKLE ANIMATION DIV */}
             {animationActive && <Sprinkles getRandomColor={getRandomColor}/>}
           </div>
-            <div className="mb-6 mt-10 "> {/* HOME */}
+            <div className="mb-6 mt-10"> {/* HOME */}
               <Header startAnimation={startAnimation} />
             </div>
-            <div className="hidden lg:block mb-6 lg:mt-20"> {/* NAV */}
+            <div className="hidden lg:block mb-6 lg:mt-20 flex flex-row"> {/* NAV */}
               <Nav />
             </div>
             <div className="flex flex-row space-x-6 lg:space-x-10 mb-6 justify-center lg:mt-10 lg:mb-20 text-white">

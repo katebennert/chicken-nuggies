@@ -1,5 +1,6 @@
 const projects = [
     {
+        id: 1,
         title: "Event Handler",
         img: "https://i.imgur.com/pEdsZ3a.png",
         description: "",
@@ -7,6 +8,7 @@ const projects = [
         technologies: ["React", "Custom CSS", "Ruby on Rails", "PostgreSQL"]
     },
     {
+        id: 2,
         title: "Osea: A LearkLink Application",
         img: "https://i.imgur.com/zXghUhK.png",
         description: "",
@@ -14,6 +16,7 @@ const projects = [
         technologies: ["Python", "Flask", "SQLAlchemy", "Tailwind", "React", "OpenAI API", "Eleven Labs API"]
     },
     {
+        id: 3,
         title: "UpFed",
         img: "https://i.imgur.com/pDinA3g.png",
         description: "A trading post for families to trade their kid's stuff for other kids' stuff.",
@@ -21,6 +24,7 @@ const projects = [
         technologies: ["React", "Custom CSS", "Ruby on Rails", "PostgreSQL"]
     },
     {
+        id: 4,
         title: "Say Cheese!",
         img: "https://i.imgur.com/bRDsmVJ.png",
         description: "",

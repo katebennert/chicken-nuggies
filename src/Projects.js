@@ -5,7 +5,7 @@ import ProjectCard from "./ProjectCard";
 function Projects() {
     return (
         <div className="pt-20">
-            {projects.map(project => <ProjectCard project={project} key={project.index} />)}
+            {projects.map(project => <ProjectCard project={project} key={project.id} />)}
         </div>
     );
   }

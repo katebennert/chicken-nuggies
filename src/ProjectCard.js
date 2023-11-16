@@ -8,7 +8,7 @@ function ProjectCard({ project }) {
             <div>
                 <h3 className="mb-2">{project.title}</h3>
                 <p className="mb-2">{project.description}</p>
-                <div className="flex flex-row flex-wrap">{project.technologies.map(t => <div key={t.index} className="mr-1 text-white mb-1 rounded-full pr-1 pl-1">{t}</div>)}</div>
+                <div className="flex flex-row flex-wrap">{project.technologies.map(t => <div key={project.technologies.indexOf(t)} className="mr-1 text-white mb-1 rounded-full pr-1 pl-1 ">{t}</div>)}</div>
             </div>
         </div>
     );
