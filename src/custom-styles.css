@@ -98,6 +98,14 @@ html {
     cursor: url('./french-fries-28.png'), default;
 }
 
+.wand-cursor {
+    cursor: url('./magic-wand-just-beyond-4.gif'), default;
+}
+
+.spider-cursor {
+    cursor: url('./ghost-spider.png'), default;
+}
+
 .nav li:hover {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }

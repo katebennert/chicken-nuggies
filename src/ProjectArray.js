@@ -3,7 +3,7 @@ const projects = [
         id: 1,
         title: "Event Handler",
         img: "https://i.imgur.com/pEdsZ3a.png",
-        description: "",
+        description: "A React and Rails API-driven app with PostgreSQL designed for streamlining communication between event planners and their clients with an in-app messaging feature, an event details page, and a venue browsing tool.",
         link: "",
         technologies: ["React", "Custom CSS", "Ruby on Rails", "PostgreSQL"]
     },
@@ -11,7 +11,7 @@ const projects = [
         id: 2,
         title: "Osea: A LearkLink Application",
         img: "https://i.imgur.com/zXghUhK.png",
-        description: "",
+        description: "An educational platform designed for elementary students with various learning disabilities to better connect to reading comprehension content. The platform uses AI technologies to create a personable text-to-speech function.",
         link: "",
         technologies: ["Python", "Flask", "SQLAlchemy", "Tailwind", "React", "OpenAI API", "Eleven Labs API"]
     },
@@ -27,7 +27,7 @@ const projects = [
         id: 4,
         title: "Say Cheese!",
         img: "https://i.imgur.com/bRDsmVJ.png",
-        description: "",
+        description: "Say Cheese! was designed to keep track of freelancers and the projects that they are working on.",
         link: "",
         technologies: ["React", "Custom CSS", "Sinatra", "SQLite"]
     }
