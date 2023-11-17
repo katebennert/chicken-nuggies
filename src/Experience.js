@@ -2,7 +2,7 @@ import React from "react";
 
 function Experience() {
     return (
-        <div className="pt-20">
+        <div className="pt-20 pb-20">
             <p className="mb-4">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus vestibulum nulla, quis bibendum enim venenatis eget. Fusce malesuada massa vitae lectus pharetra, vel condimentum purus molestie. Morbi bibendum felis id elit lacinia mollis. Vestibulum dignissim accumsan odio non consectetur.
   </p>

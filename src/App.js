@@ -7,7 +7,7 @@ import About from './About';
 import Experience from "./Experience";
 import Projects from './Projects';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDev, faGithub, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faDev, faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import ComputerDonut from './computer-donut.png'
 
 function App() {
@@ -30,8 +30,8 @@ function App() {
   };
 
   return (
-    <div className="font-inter flex flex-col lg:flex-row relative"> {/* APP */}  
-
+    <div className="font-inter flex flex-col lg:flex-row relative background-gradient"> {/* APP */}  
+    
         <img
             src={ComputerDonut}
             alt="Kate with two donuts"
@@ -53,11 +53,19 @@ function App() {
             <div className="hidden lg:block mb-6 lg:mt-20 flex flex-row"> {/* NAV */}
               <Nav />
             </div>
-            <div className="flex flex-row space-x-6 lg:space-x-10 mb-6 justify-center lg:mt-10 lg:mb-20 text-white">
-              <FontAwesomeIcon icon={faGithub} style={{ fontSize: '1.5rem' }} className="hover:text-spPink transition duration-300 ease-in-out cursor-pointer" />
-              <FontAwesomeIcon icon={faXTwitter} style={{ fontSize: '1.5rem' }} className="hover:text-spYellow transition duration-300 ease-in-out cursor-pointer" />
-              <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: '1.5rem' }} className="hover:text-spPurple transition duration-300 ease-in-out cursor-pointer" />
-              <FontAwesomeIcon icon={faDev} style={{ fontSize: '1.5rem' }} className="hover:text-spGreen transition duration-300 ease-in-out cursor-pointer" />
+            <div className="flex flex-row space-x-6 lg:space-x-10 mb-6 justify-center lg:mt-10 lg:mb-20 text-white text-2xl">
+              <a href="https://github.com/katebennert" target="_blank" rel="noopener noreferrer" >
+                <FontAwesomeIcon icon={faGithub} className="hover:text-spPink hover:scale-110 transition duration-300 ease-in-out cursor-pointer" />
+              </a>
+              <a href="https://www.linkedin.com/in/kate-bennert/" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faLinkedin} className="hover:text-spYellow hover:scale-110 transition duration-300 ease-in-out cursor-pointer" />
+              </a>
+              <a href="https://dev.to/katebennert" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faDev} className="hover:text-spPurple hover:scale-110 transition duration-300 ease-in-out cursor-pointer" />
+              </a>
+              <a href="https://www.instagram.com/katebenz/" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faInstagram} className="hover:text-spGreen hover:scale-110 transition duration-300 ease-in-out cursor-pointer" />
+              </a>
             </div>
           </div>
         </div>

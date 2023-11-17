@@ -1,12 +1,21 @@
 :root {
-    --dark-pink: #fe84b9;
-    --light-pink:  #feb7d5;
+    /* --dark-pink: #fe84b9; */
+    --dark-pink: #ff64a7;
+    --light-pink:  #ff75b1;
+    --white-pink:  #ff91c1;
     --baby-blue: rgb(180, 236, 255);
     --yellow: rgb(253, 253, 202);
 }
 
-* {
-    background: var(--light-pink);
+.background-gradient {
+    background-image: linear-gradient(to bottom right, var(--white-pink), var(--light-pink), var(--dark-pink), var(--light-pink), var(--white-pink));
+}
+
+.donut-gif {
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
 @keyframes sprinkleFall {
@@ -52,6 +61,7 @@
     width: 30px;
     height: 10px;
     border-radius: 35%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.577);
 }
 
 .sprinkle-pink {
@@ -112,6 +122,11 @@ html {
 
 .name {
     text-shadow: 2px 2px 4px rgba(255,255,255,0.9)
+}
+
+.subhead {
+    text-shadow: 2px 2px 4px rgba(54, 2, 1, 1);
+    color: white;
 }
 
 .name:hover {
