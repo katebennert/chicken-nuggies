@@ -1,8 +1,8 @@
 :root {
     /* --dark-pink: #fe84b9; */
     --dark-pink: #fca8cc;
-    --light-pink:  #ffc1dc;
-    --white-pink:  #fdddeb;
+    --light-pink:  #ffb6d6;
+    --white-pink:  #fbd4e5;
     --baby-blue: rgb(180, 236, 255);
     --yellow: rgb(253, 253, 202);
 }
@@ -186,4 +186,11 @@ nav ul li span:hover::before {
     border-radius: 50px;
     background-color: rgba(255, 255, 255, 0.631);
     transform: scaleX(1.2); /* Adjust the initial appearance */
-  }
+}
+
+.text-gradient:hover {
+    background: linear-gradient(to right, #ff33bb,  #33daff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}

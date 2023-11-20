@@ -34,12 +34,12 @@ function App() {
     <div className="flex flex-col lg:flex-row relative background-gradient"> {/* APP */}  
 
 <AnimatedCursor
-      innerSize={10}
+      innerSize={12}
       outerSize={20}
       color='255, 255, 255'
       outerAlpha={0.2}
       innerScale={0.7}
-      outerScale={5}
+      outerScale={4}
     />
 
         <img

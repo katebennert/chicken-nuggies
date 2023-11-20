@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { scroller } from 'react-scroll';
 
 function Nav() {
@@ -12,6 +12,40 @@ function Nav() {
         });
         setActiveSection(section);
     };
+
+    useEffect(() => {
+        const sectionIds = ['about', 'projects', 'experience'];
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setActiveSection(entry.target.id);
+                    }
+                });
+            },
+            {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.8 // Adjust as needed
+            }
+        );
+
+        sectionIds.forEach((id) => {
+            const target = document.getElementById(id);
+            if (target) {
+                observer.observe(target);
+            }
+        });
+
+        return () => {
+            sectionIds.forEach((id) => {
+                const target = document.getElementById(id);
+                if (target) {
+                    observer.unobserve(target);
+                }
+            });
+        };
+    }, []);
 
     return (
         <nav className="flex flex-col justify-center items-center text-center">

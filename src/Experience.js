@@ -15,10 +15,14 @@ function Experience() {
   <p className="mb-4">
     Proin auctor dolor ut ex egestas aliquam. Vivamus vitae turpis odio. Donec vitae magna sit amet ipsum pretium placerat. Phasellus convallis efficitur suscipit. Nunc quis elit ac felis hendrerit dictum non eu odio.
   </p>
-  <p className="mb-4">
+  <p className="mb-12">
     Suspendisse potenti. Curabitur ac rhoncus est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec dignissim mi vel tempus tristique. Etiam lacinia non dui nec finibus.
   </p>
-        </div>
+
+  <p className="text-xs">
+        Created in React, styled with <a href="https://tailwindcss.com/" target="blank" className="text-white hover:text-spPink">Tailwind</a> and Vanilla CSS. Animated cursor component by <a href="https://stephenscaff.com/" target="blank" className="text-white hover:text-spPurple">Stephen Scaff</a>. Sprinkle animation by me! The cursive text is <a href="https://fonts.google.com/specimen/Agbalumo" target="blank" className="text-white hover:text-blue-500">Agbalumo</a> and the sans-serif is <a href="https://fonts.google.com/specimen/Open+Sans" target="blank" className="text-white hover:text-spOrange">Open Sans</a>.
+  </p>
+    </div>
     );
   }
   
