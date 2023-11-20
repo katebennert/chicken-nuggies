@@ -46,7 +46,7 @@ function App() {
             src={ComputerDonut}
             alt="Kate with two donuts"
             className="absolute bottom-0 left-0 hidden lg:block"
-            style={{ width: '16vw', zIndex: '999', background: 'none' }}
+            style={{ width: '16vw', zIndex: '99', background: 'none' }}
           />
           
         <div className="flex-shrink-0 w-full lg:w-1/2 order-1 pl-6 pr-6 md:pl-10 md:pr-10"> {/* LEFT SIDE */}

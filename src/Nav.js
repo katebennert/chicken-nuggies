@@ -1,21 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { scroller } from 'react-scroll';
 
 function Nav() {
 
-    const scrollToSection = (elementId) => {
-        scroller.scrollTo(elementId, {
+    const [activeSection, setActiveSection] = useState('about');
+
+    const scrollToSection = (section) => {
+        scroller.scrollTo(section, {
           duration: 800,
           delay: 0
         });
+        setActiveSection(section);
     };
 
     return (
         <nav className="flex flex-col justify-center items-center text-center">
             <ul className="text-donutBrown font-agbalumo text-2xl" >
-                <li className="mb-4"><span onClick={() => scrollToSection("about")}>about</span></li>
-                <li className="mb-4"><span onClick={() => scrollToSection("projects")}>projects</span></li>
-                <li className=""><span onClick={() => scrollToSection("experience")}>experience</span></li>
+                <li className={'mb-4'}>
+                    <span className={`${activeSection === 'about' ? 'active-section' : ''}`} onClick={() => scrollToSection("about")}>about</span>
+                </li>
+                <li className="mb-4">
+                    <span className={`${activeSection === 'projects' ? 'active-section' : ''}`} onClick={() => scrollToSection("projects")}>projects</span>
+                </li>
+                <li className="">
+                    <span className={`${activeSection === 'experience' ? 'active-section' : ''}`} onClick={() => scrollToSection("experience")}>experience</span>
+                </li>
             </ul>
         </nav>
     );
