@@ -19,7 +19,8 @@ module.exports = {
       fontFamily: {
         limelight: ["Limelight", 'cursive'],
         inter: ["Inter", 'sans-serif'],
-        agbalumo: ["Agbalumo", 'cursive']
+        agbalumo: ["Agbalumo", 'cursive'],
+        open: ["Open Sans", 'sans-serif']
       }
     },
   },

@@ -11,20 +11,13 @@ function Nav() {
     };
 
     return (
-        <div className="flex justify-center items-center text-center">
-            <ul className="text-donutBrown font-agbalumo nav" >
-                <span onClick={() => scrollToSection("about")}>
-                    <li className="hover:bg-spPink hover:text-white rounded-full mb-4 p-1 text-xl transition duration-300 ease-in-out cursor-pointer">ABOUT</li>
-                </span>
-                <span onClick={() => scrollToSection("projects")}>
-                    <li className="hover:bg-spGreen hover:text-white rounded-full mb-4 p-1 text-xl transition duration-300 ease-in-out cursor-pointer">PROJECTS</li>
-                </span>
-                <span onClick={() => scrollToSection("experience")}>
-                    <li className="hover:bg-spPurple hover:text-white rounded-full p-1 text-xl transition duration-300 ease-in-out cursor-pointer">EXPERIENCE</li>
-                </span>
+        <nav className="flex flex-col justify-center items-center text-center">
+            <ul className="text-donutBrown font-agbalumo text-2xl" >
+                <li className="mb-4"><span onClick={() => scrollToSection("about")}>about</span></li>
+                <li className="mb-4"><span onClick={() => scrollToSection("projects")}>projects</span></li>
+                <li className=""><span onClick={() => scrollToSection("experience")}>experience</span></li>
             </ul>
-
-        </div>
+        </nav>
     );
   }
   

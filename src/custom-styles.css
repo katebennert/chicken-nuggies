@@ -1,10 +1,14 @@
 :root {
     /* --dark-pink: #fe84b9; */
-    --dark-pink: #fe6ead;
-    --light-pink:  #ff75b1;
-    --white-pink:  #ff91c1;
+    --dark-pink: #fca8cc;
+    --light-pink:  #ffc1dc;
+    --white-pink:  #fdddeb;
     --baby-blue: rgb(180, 236, 255);
     --yellow: rgb(253, 253, 202);
+}
+
+* {
+    cursor: none;
 }
 
 .background-gradient {
@@ -65,7 +69,7 @@
 }
 
 .sprinkle-pink {
-    background-color: #ff00ea;
+    background-color: rgb(255, 0, 234);
 }
 
 .sprinkle-yellow {
@@ -116,9 +120,9 @@ html {
     cursor: url('./ghost-spider.png'), default;
 }
 
-.nav li:hover {
+/* .nav li:hover {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-}
+} */
 
 .name {
     text-shadow: 2px 2px 4px rgba(255,255,255,0.9)
@@ -136,9 +140,39 @@ html {
 
 .flip-on-hover {
     display: inline-block;
-    transition: transform 0.7s ease;
+    transition: transform 0.9s ease;
 }
   
 .flip-on-hover:hover {
     transform: rotateX(360deg);
+}
+
+.project-card:hover {
+    background-color: var(--white-pink);
+}
+
+/* NAV ANIMATION */
+
+nav ul li span {
+    position: relative;
+    text-decoration: none;
+}
+  
+nav ul li span::before {
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: -10%;
+    width: 100%;
+    height: 2px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.631);
+    transform: scaleX(0);
+    transition: transform 0.4s ease-in-out;
+    transform-origin: left;
+    
+}
+  
+nav ul li span:hover::before {
+    transform: scaleX(1.2);
 }

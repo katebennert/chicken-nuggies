@@ -3,7 +3,7 @@ import React from "react";
 function ProjectCard({ project }) {
 
     return (
-        <div className="mb-10 flex items-start border rounded-md p-4 hover:border-spGreen transition duration-300 ease-in-out hover:shadow-lg hover:cursor-pointer text-donutBrown">
+        <div className="mb-10 flex items-start rounded-md p-4 transition duration-300 ease-in-out project-card hover:shadow-lg hover:cursor-pointer">
           <img src={project.img} alt={project.title} className="w-32 h-32 object-cover rounded mr-4" />
           <div>
             <p className="mb-2 font-bold">{project.title}</p>
